@@ -1,0 +1,9 @@
+<div>
+<nav class="nav">
+    <ul class="nav-list">
+        <li *ngFor="let navItem of navList" class="nav-list-item" [routerLink]="navItem" routerLinkActive="active">
+           {{"nav." + navItem | translate}}
+        </li>
+    </ul>
+</nav>
+</div>

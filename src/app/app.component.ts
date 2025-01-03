@@ -1,14 +1,26 @@
-import { afterNextRender, Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router'; 
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NavigationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Intership';
 
+  constructor(private readonly translate: TranslateService) {}
+
+  ngOnInit(): void {
+    this.setupTranslation();
+  }
+
+  private setupTranslation() {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
 }

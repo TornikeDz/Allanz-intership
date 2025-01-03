@@ -1,0 +1,16 @@
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-family: "Bebas Neue", serif;
+
+    &-item {
+        color: #ffff;
+        text-shadow: 2px 2px 4px rgba(128, 0, 128, 0.7); 
+        cursor: pointer;
+    }
+}

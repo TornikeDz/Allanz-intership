@@ -1,0 +1,8 @@
+{
+    "nav": {
+        "swiper": "swiper",
+        "pagination": "pagination",
+        "notifications": "notifications",
+        "popup": "popUp"
+        }
+}
