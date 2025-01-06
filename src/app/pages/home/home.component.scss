@@ -1,0 +1,27 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 40px;
+    padding-bottom: 200px;
+    width: 80%;
+    background: #ffff;
+    color: rgba(128, 0, 128, 0.7);
+
+    &-daily-title {
+        font-size: 80px;
+    }
+
+    &-daily-description {
+        padding: 0 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.image {
+    max-width: 100%;
+}
