@@ -16,7 +16,7 @@ import { HomeLogoComponent } from '../home-logo/home-logo.component';
 export class NavigationComponent implements OnInit{
   public navList: string[] = [];
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.getNavItems();
   }
 
