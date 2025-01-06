@@ -1,0 +1,17 @@
+.home-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &-icon {
+        width: 40px;
+    }   
+
+    &-text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
