@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-image-card',
   standalone: true,
   imports: [],
   templateUrl: './image-card.component.html',
-  styleUrl: './image-card.component.scss'
+  styleUrl: './image-card.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImageCardComponent {
 
