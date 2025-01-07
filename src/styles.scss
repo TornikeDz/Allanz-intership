@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-image: url('./assets/images/space-background.webp');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.active {
+    border-bottom: 8px solid rgb(0, 219, 219);
+  }

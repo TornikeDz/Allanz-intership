@@ -1,0 +1,12 @@
+{
+    "nav": {
+        "swiper": "swiper",
+        "pagination": "pagination",
+        "notifications": "notifications",
+        "popup": "popUp",
+
+        "homeLogo": {
+            "homeLogoText": "Go Home"
+        }
+        }
+}
