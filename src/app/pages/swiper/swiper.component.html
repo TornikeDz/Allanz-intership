@@ -1,0 +1,28 @@
+<div class="swiper">
+    <div class="swiper-switch">
+        <button 
+        [ngClass]="{'active': cardType === 'text'}"  
+        class="swiper-switch-button" 
+        (click)="setCardType('text')">
+        {{"swiper.textCards" | translate}}
+    </button>
+        <button 
+        [ngClass]="{'active': cardType === 'image'}"
+        class="swiper-switch-button" 
+        (click)="setCardType('image')">
+        {{"swiper.imageGallery" | translate}}
+    </button>
+        <button 
+        [ngClass]="{'active': cardType === 'planetary'}" 
+        class="swiper-switch-button" 
+        (click)="setCardType('planetary')">
+        {{"swiper.planetaryCards" | translate}}
+    </button>
+    </div>
+    
+    <div class="swiper-container">
+        <app-text-cards-swiper *ngIf="cardType === 'text'"></app-text-cards-swiper>
+        <app-image-cards-swiper *ngIf="cardType === 'image'"></app-image-cards-swiper>
+        <app-planetary-cards-swiper *ngIf="cardType === 'planetary'"></app-planetary-cards-swiper>
+    </div>
+</div>
