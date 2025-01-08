@@ -1,1 +1,8 @@
-<p>image-cards-swiper works!</p>
+<swiper 
+    class="text-slider"
+    [config]="config"
+    >
+    <ng-template swiperSlide *ngFor="let image of roverImages.photos">
+        <app-image-card [imgSrc]="image.img_src"></app-image-card>
+    </ng-template>
+</swiper>
