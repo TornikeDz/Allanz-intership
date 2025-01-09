@@ -8,5 +8,14 @@
         "homeLogo": {
             "homeLogoText": "Go Home"
         }
+        },
+    "swiper" : {
+        "textCards": "text Cards",
+        "imageGallery": "image Gallery",
+        "planetaryCards": "planetary Cards",
+
+        "textCard": {
+            "warning": "pluto is a planet"
         }
+    }
 }

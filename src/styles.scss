@@ -1,7 +1,10 @@
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    background-image: url('./assets/images/space-background.webp');
+    background-image: url('./assets/icons/space-background.webp');
     background-size: cover;
     background-position-x: center;
 }
@@ -9,3 +12,5 @@ body {
 .active {
     border-bottom: 8px solid rgb(0, 219, 219);
   }
+
+html, body { height: 100%; }

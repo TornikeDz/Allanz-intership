@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, DestroyRef, OnInit } from '@angular/core';
-import { DailyPictureService } from '../../services/daily-picture.service';
+import { DailyPictureService } from '../../services/daily-picture/daily-picture.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { catchError, of } from 'rxjs';
 import { DailyPictureData } from '../../interfaces/daily-picture-data.interface';

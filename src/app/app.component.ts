@@ -13,7 +13,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent implements OnInit{
   title = 'Intership';
 
-  constructor(private readonly translate: TranslateService) {}
+  constructor(
+    private readonly translate: TranslateService, 
+  ) {}
 
   ngOnInit(): void {
     this.setupTranslation();
@@ -23,4 +25,5 @@ export class AppComponent implements OnInit{
     this.translate.setDefaultLang('en');
     this.translate.use('en');
   }
+
 }

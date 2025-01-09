@@ -1,0 +1,50 @@
+:host {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.planetary-card {
+    height: 750px;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+        height: 400px;
+        width: 250px;
+        background: #E6D7FF;
+        border-radius: 7%;
+        position: relative;
+        z-index: 1;
+
+        &.earth { background: #228EA9; color: #00bfff; } 
+        &.mars { background: #FECEDA; color: #fa2500; }  
+        &.mercury { background: #E6D7FF; color: #7b35d1; } 
+        &.venus { background: #f55b14; color: #f0b801; }  
+        &.jupiter { background: #FF9E00; color: #7c4200; } 
+        &.saturn { background: #C8B07B; color: #005a0f;} 
+        &.uranus { background: #71A6D2; color: #0073bb;} 
+        &.neptune { background: #4B9CD3; color: #003f66;} 
+
+        &-title {
+            text-transform: capitalize;
+            font-size: 30px;
+            font-size: 700;
+        }
+
+        &-description {
+            font-size: 20px;
+        }
+    }
+
+    .planetary-card-planet {
+        max-width: 250px;
+        position: absolute;
+        top: 350px;
+        left: 40px;
+        z-index: 2;
+    }
+}
+
+  

@@ -1,0 +1,10 @@
+<div class="planetary-swiper">
+   <swiper 
+   class="text-slider"
+   [config]="config"
+   >
+      <ng-template swiperSlide *ngFor="let planet of planetaryCards">
+         <app-planetary-card [planetName]="planet.name" [planetDescription]="planet.description"></app-planetary-card>
+      </ng-template>
+   </swiper>
+</div>
