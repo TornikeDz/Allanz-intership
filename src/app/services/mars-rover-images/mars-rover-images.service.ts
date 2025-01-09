@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { URL } from '../../constants/URL';
-import { ENDPOINTS } from '../../constants/endpoints';
-import { API_KEY } from '../../constants/API_KEY';
+import { URL } from '../../utils/constants/URL';
+import { ENDPOINTS } from '../../utils/constants/endpoints';
+import { API_KEY } from '../../utils/constants/API_KEY';
 import { MarsRoverPhotos } from '../../interfaces/mars-rover-image.interface';
 import { Observable } from 'rxjs';
 

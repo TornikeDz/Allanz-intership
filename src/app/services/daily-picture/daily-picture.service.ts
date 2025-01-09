@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { URL } from '../constants/URL';
-import { ENDPOINTS } from '../constants/endpoints';
-import { API_KEY } from '../constants/API_KEY';
+import { URL } from '../../utils/constants/URL';
+import { ENDPOINTS } from '../../utils/constants/endpoints';
+import { API_KEY } from '../../utils/constants/API_KEY';
 import { Observable } from 'rxjs';
-import { DailyPictureData } from '../interfaces/daily-picture-data.interface';
+import { DailyPictureData } from '../../interfaces/daily-picture-data.interface';
 
 @Injectable({
   providedIn: 'root'

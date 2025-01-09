@@ -10,4 +10,5 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class ImageCardComponent {
   @Input() imgSrc: string = "";
+  @Input() roverImgId!: number;
 }

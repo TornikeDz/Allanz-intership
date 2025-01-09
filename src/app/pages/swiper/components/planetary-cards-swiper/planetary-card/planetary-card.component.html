@@ -1,1 +1,7 @@
-<p>planetary-card works!</p>
+<div class="planetary-card">
+    <div class="planetary-card-container" [ngClass]="planetName">
+        <div class="planetary-card-container-title">{{ planetName }}</div>
+        <div class="planetary-card-container-description">{{ planetDescription }}</div>
+    </div>
+    <img class="planetary-card-planet" [src]="getPlanetIcon()" alt="">
+</div>

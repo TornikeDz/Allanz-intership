@@ -1,8 +1,8 @@
 <swiper 
-    class="text-slider"
+    class="images-slider"
     [config]="config"
     >
     <ng-template swiperSlide *ngFor="let image of roverImages.photos">
-        <app-image-card [imgSrc]="image.img_src"></app-image-card>
+        <app-image-card [imgSrc]="image.img_src" [roverImgId]="image.id"></app-image-card>
     </ng-template>
 </swiper>

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DailyPictureService } from './daily-picture.service';
+import { DailyPictureService } from './daily-picture.service'; 
 
 describe('DailyPictureService', () => {
   let service: DailyPictureService;

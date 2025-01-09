@@ -2,11 +2,11 @@ import { ChangeDetectionStrategy, Component, DestroyRef, OnInit } from '@angular
 import { MarsRoverImagesService } from '../../../../services/mars-rover-images/mars-rover-images.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { catchError, of } from 'rxjs';
-import { MarsRoverImage, MarsRoverPhotos } from '../../../../interfaces/mars-rover-image.interface';
+import { MarsRoverPhotos } from '../../../../interfaces/mars-rover-image.interface';
 import SwiperCore, { SwiperOptions, Navigation, Pagination } from 'swiper';
 import { CommonModule } from '@angular/common';
 import { SwiperModule } from 'swiper/angular';
-import { textSliderConfig } from '../../constants/sliderConfigs';
+import { imagesSliderConfig } from '../../constants/sliderConfigs';
 import { ImageCardComponent } from './image-card/image-card.component';
 
 SwiperCore.use([Pagination, Navigation]);
@@ -21,7 +21,7 @@ SwiperCore.use([Pagination, Navigation]);
 })
 export class ImageCardsSwiperComponent implements OnInit{
   public roverImages!: MarsRoverPhotos;
-  public config: SwiperOptions  = textSliderConfig;
+  public config: SwiperOptions  = imagesSliderConfig;
 
   constructor(
     private readonly marsRoverImagesService: MarsRoverImagesService,
